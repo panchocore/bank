@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "8aaae38c-39c8-4dce-ae3a-2d37dd7ee1a9",
+		"name": "Banca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15755133"
+	},
+	"item": [
+		{
+			"name": "Personas crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"per_direccion\":\"Otavalo sn y principal\",\r\n    \"per_edad\":20,\r\n    \"per_genero\":\"masculino\",\r\n    \"per_identificacion\":\"1712345678\",\r\n    \"per_nombre\":\"Patricio Perez\",\r\n    \"per_telefono\":\"098254785\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/banca/personas/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"personas",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personas actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"per_id\":1,\r\n    \"per_direccion\":\"Otavalo sn y principal\",\r\n    \"per_edad\":20,\r\n    \"per_genero\":\"masculino\",\r\n    \"per_identificacion\":\"1712345678\",\r\n    \"per_nombre\":\"Jose Lema\",\r\n    \"per_telefono\":\"098254785\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/banca/personas/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"personas",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personas eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/banca/personas/eliminar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"personas",
+						"eliminar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cli_clave\":\"abc123\",\r\n    \"cli_estado\":true,\r\n    \"per_direccion\":\"Otavalo sn y principal\",\r\n    \"per_edad\":20,\r\n    \"per_genero\":\"masculino\",\r\n    \"per_identificacion\":\"1712345679\",\r\n    \"per_nombre\":\"aaaa bbbb\",\r\n    \"per_telefono\":\"098254785\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/banca/clientes/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"clientes",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cli_clave\":\"123\",\r\n    \"cli_estado\":\"A\",\r\n    \"per_id\":6,\r\n    \"per_direccion\":\"Otavalo sn y principal\",\r\n    \"per_edad\":20,\r\n    \"per_genero\":\"femenino\",\r\n    \"per_identificacion\":\"1712345679\",\r\n    \"per_nombre\":\"Maria Jose\",\r\n    \"per_telefono\":\"098254785\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/banca/clientes/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"clientes",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/banca/clientes/eliminar/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"clientes",
+						"eliminar",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cue_estado\":\"A\",\r\n    \"cue_numero\":\"120123456\",\r\n    \"cue_saldo_inicial\":200,\r\n    \"cue_tipo\":\"ahorros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/banca/cuentas/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banca",
+						"cuentas",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimientos crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mov_fecha\":\"03/09/2022\",\r\n    \"mov_tipo\":\"debito\",\r\n    \"mov_valor\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:19090/banca/movimientos/crear/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "19090",
+					"path": [
+						"banca",
+						"movimientos",
+						"crear",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cuentas crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cue_estado\":false,\r\n    \"cue_numero\":\"123120\",\r\n    \"cue_saldo\":200,\r\n    \"cue_saldo_inicial\":200,\r\n    \"cue_tipo\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:19090/banca/cuentas/crear/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "19090",
+					"path": [
+						"banca",
+						"cuentas",
+						"crear",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reportes movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:19090/banca/reportes/movimientos/5/2022-09-01/2022-09-09",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "19090",
+					"path": [
+						"banca",
+						"reportes",
+						"movimientos",
+						"5",
+						"2022-09-01",
+						"2022-09-09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/valor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/valor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"valor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
